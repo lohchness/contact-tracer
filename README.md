@@ -37,8 +37,9 @@ Another example, the `tuple`:
 
 tells us that Xaiton visited CoffeX on day 10 of the outbreak,  arriving at 2:05am and departing at 11:59pm. If Xaoitan had stayed past  midnight, there would be another entry for day 11, starting at 00:00am.
 
+### All example calls are listed in contacttracer-testing.py
+
 # CALCULATING LENGTH
-All example calls are listed in contacttracer-testing.py
 Functions: visit_length(visit)
 
 The function takes one argument, visit in the form of a 7-tuple.
@@ -101,6 +102,7 @@ The function should return an alphabetically sorted list of IDs of people who sh
 
 # BACKWARD CONTACT TRACING
 Functions: backward_contact_trace(visits, index, day_time, window)
+
 While forward contact tracing can identify other people who may have been infected by the index case, it doesn't consider where the index case themself was infected from.
 
 Backward contact tracing can be used to identify the potential source of the index case's infection by looking back through their recent contact history. Backward contact tracing can be very effective because once this earlier source case is identified, a larger proportion of potentially infected people can be identified by forward tracing each of the source's contacts.
